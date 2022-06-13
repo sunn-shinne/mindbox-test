@@ -1,4 +1,4 @@
-export default {
+const en = {
   translation: {
     title: 'todos',
     errors: {
@@ -20,3 +20,5 @@ export default {
     },
   },
 };
+
+export default en;
