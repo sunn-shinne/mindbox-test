@@ -8,8 +8,8 @@ const TaskItem = ({ task, onCheckTask }) => (
       <Form.Check.Label>
         {
           task.done
-            ? <p className="mb-0"><s>{task.text}</s></p>
-            : <p className="mb-0">{task.text}</p>
+            ? <s>{task.text}</s>
+            : task.text
         }
       </Form.Check.Label>
     </Form.Check>

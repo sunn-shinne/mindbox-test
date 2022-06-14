@@ -17,13 +17,13 @@ const FilterControls = () => {
 
   return (
     <ToggleButtonGroup type="checkbox" value={currentFilter} onChange={onChangeFilter}>
-      <ToggleButton className={allCls} variant="=light" id="filterAll" value="all">
+      <ToggleButton className={allCls} variant="=light" id="allFilter" value="all" aria-label="allFilter">
         <span className="small">{t('buttons.all')}</span>
       </ToggleButton>
-      <ToggleButton className={activeCls} variant="=light" id="filterActive" value="active">
+      <ToggleButton className={activeCls} variant="=light" id="activeFilter" value="active" aria-label="activeFilter">
         <span className="small">{t('buttons.active')}</span>
       </ToggleButton>
-      <ToggleButton className={completedCls} variant="=light" id="filterCompleted" value="completed">
+      <ToggleButton className={completedCls} variant="=light" id="completedFilter" value="completed" aria-label="completedFilter">
         <span className="small">{t('buttons.completed')}</span>
       </ToggleButton>
     </ToggleButtonGroup>

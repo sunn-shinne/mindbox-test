@@ -34,7 +34,7 @@ const Tasks = () => {
   );
 
   return (
-    <div className="overflow-auto px-5">
+    <div data-testid="tasks" className="overflow-auto px-5">
       {currentTasks.map(renderTask)}
     </div>
   );
